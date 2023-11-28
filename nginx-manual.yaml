@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx-manual-deployment
+spec:
+  containers:
+  - image: darknight113/nodejs_image:v1
+    name: nginx-manual-deployment
+    ports:
+    - containerPort: 8080
+      protocol: TCP
